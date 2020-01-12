@@ -42,7 +42,7 @@ body.pdf > #main {
 }
 
 #container > header {
-  padding-top: 3em;
+  padding-top: 6em;
   padding-bottom: 1em;
 }
 
@@ -57,26 +57,22 @@ body.pdf #container > header {
 }
 
 section > div {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 span.fa
 {
   font-size: 56px;
   position: absolute;
-  top: 27px;
+  top: 37px;
   transform: translateY(-50%);
   left: -100px;
   color: #1a4367;
 }
 
-span.fa-code {
-  top: 18px;
-}
-
 hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #EEE;
 }
@@ -96,8 +92,8 @@ h2 {
   color: #4376a2;
   text-transform: uppercase;
   font-weight: normal;
-  padding-top: 10px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 60px;
 }
 
 h3 {
@@ -121,7 +117,7 @@ a:hover {
 }
 
 #summary {
-  font-size: 90%;
+  font-size: 150%;
   margin-left: 0;
   padding: 20px 0;
 }
@@ -139,7 +135,7 @@ a:hover {
   /*letter-spacing: 5px; PDFs hate letter-spacing */
   text-transform: uppercase;
   font-weight: normal;
-  top: 30%;
+  top: 50%;
   left: -85px;
   transform: translateY(-50%);
 }
@@ -233,12 +229,6 @@ a:hover {
 .list-unstyled {
   padding-left: 0;
   list-style: none;
-  display: block;
-  overflow: auto;
-}
-.card-skills {
-  float: left;
-  width: 50%;
 }
 
 .card-skills {
