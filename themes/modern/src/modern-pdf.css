@@ -5,15 +5,24 @@
 
 }}
 
-* {
+div.resume-html * {
   box-sizing: border-box;
 }
 
-main {
+div.resume-html main {
   display: block;
 }
 
-body {
+div.resume-html body {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.42857143;
+  background-color: #F0F0F0;
+  margin: 0;
+  padding: 0;
+  font-family: {{{fontList 'default'}}};
+}
+body.resume-html {
   font-size: 15px;
   color: #333;
   line-height: 1.42857143;
@@ -24,43 +33,43 @@ body {
 }
 
 /* Typical page borders are awkward when rendered to PDF. */
-body.pdf {
+div.resume-html body.pdf {
   background-color: #FFFFFF;
 }
 
 /* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
 the PDF case, <main> for the HTML case, and style both via an ID. */
-#main {
+div.resume-html #main {
   background-color: #FFF;
   margin: 10px;
   padding: 10px;
   border: 1px solid #E6E6E6;
 }
 
-body.pdf > #main {
+div.resume-html body.pdf > #main {
   border: none;
 }
 
-#container > header {
+div.resume-html #container > header {
   padding-top: 3em;
   padding-bottom: 1em;
 }
 
-body.pdf #container > header {
+div.resume-html body.pdf #container > header {
   padding: 0;
 }
 
-#main > #container > section {
+div.resume-html #main > #container > section {
   margin-left: 150px;
   position: relative;
   display: block;
 }
 
-section > div {
+div.resume-html section > div {
   margin-bottom: 30px;
 }
 
-span.fa
+div.resume-html span.fa
 {
   font-size: 56px;
   position: absolute;
@@ -70,28 +79,28 @@ span.fa
   color: #1a4367;
 }
 
-span.fa-code {
+div.resume-html span.fa-code {
   top: 18px;
 }
 
-hr {
+div.resume-html hr {
   margin-top: 10px;
   margin-bottom: 10px;
   border: 0;
   border-top: 1px solid #EEE;
 }
 
-.tenure, .keywords {
+div.resume-html .tenure, div.resume-html .keywords {
   font-size: 75%;
 }
 
-h1 {
+div.resume-html h1 {
   margin: 0;
   font-size: 46px;
   display: inline-block;
 }
 
-h2 {
+div.resume-html h2 {
   font-size: 30px;
   color: #4376a2;
   text-transform: uppercase;
@@ -100,41 +109,41 @@ h2 {
   margin-bottom: 20px;
 }
 
-h3 {
+div.resume-html h3 {
   margin-bottom: 0;
   font-size: 18px;
 }
 
-a, a:visited {
+div.resume-html a, div.resume-html a:visited {
   color: #428BCA;
   text-decoration: none;
   font-weight: bold;
 }
 
-a:hover {
+div.resume-html a:hover {
   text-decoration: underline;
 }
 
-.defunct {
+div.resume-html .defunct {
   color: #989898;
   font-weight: bold;
 }
 
-#summary {
+div.resume-html #summary {
   font-size: 90%;
   margin-left: 0;
   padding: 20px 0;
 }
 
-#summary > p > strong {
+div.resume-html #summary > p > strong {
   font-size: 1.25em;
 }
 
-#contact {
+div.resume-html #contact {
   float: right;
 }
 
-#summary > header > .fa-info {
+div.resume-html #summary > header > .fa-info {
   font-size: 70px;
   /*letter-spacing: 5px; PDFs hate letter-spacing */
   text-transform: uppercase;
@@ -144,12 +153,12 @@ a:hover {
   transform: translateY(-50%);
 }
 
-#summary h2 {
+div.resume-html #summary h2 {
   display: none;
 }
 
 
-.label-keyword {
+div.resume-html .label-keyword {
   display: inline-block;
   background: #e8f4ff;
   color: black;
@@ -162,28 +171,28 @@ a:hover {
   text-align: center;
 }
 
-.notes {
+div.resume-html .notes {
   font-size: 10px;
   display: block;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-.card-skills {
+div.resume-html .card-skills {
     position: relative;
 }
-.card-nested {
+div.resume-html .card-nested {
     min-height: 0;
     margin-bottom: 10px;
     border-width: 1px 0 0 0;
 }
-.card {
+div.resume-html .card {
     background: #FFF;
     border-radius: 3px;
     padding: 10px;
 }
 
-.skill-level {
+div.resume-html .skill-level {
   border-radius: 3px;
   position: absolute;
   top: 10px;
@@ -192,69 +201,69 @@ a:hover {
   width: 10px;
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
 }
-.skill-level .skill-progress {
+div.resume-html .skill-level .skill-progress {
   position: absolute;
   border-radius: 3px;
   bottom: 0;
   width: 100%;
   -webkit-transition: height 1s ease;
 }
-.skill-level .skill-progress.beginner {
+div.resume-html .skill-level .skill-progress.beginner {
   height: 50%;
   background: #e74c3c;
 }
-.skill-level .skill-progress.intermediate {
+div.resume-html .skill-level .skill-progress.intermediate {
   height: 70%;
   background: #f1c40f;
 }
-.skill-level .skill-progress.advanced {
+div.resume-html .skill-level .skill-progress.advanced {
   height: 80%;
   background: #428bca;
 }
-.skill-level .skill-progress.master {
+div.resume-html .skill-level .skill-progress.master {
   height: 95%;
   background: #5cb85c;
 }
-.skill-info {
+div.resume-html .skill-info {
   margin-left: 10px;
 }
 @media (max-width: 480px) {
-  .skill-info {
+  div.resume-html .skill-info {
     margin-left: 20px;
   }
 }
-.skill-info > strong {
+div.resume-html .skill-info > strong {
   font-weight: 400;
   font-size: 24px;
   color: #1d1d1d;
   line-height: 24px;
 }
 
-.list-unstyled {
+div.resume-html .list-unstyled {
   padding-left: 0;
   list-style: none;
   display: block;
   overflow: auto;
 }
-.card-skills {
+div.resume-html .card-skills {
   float: left;
   width: 50%;
 }
 
-.card-skills {
+div.resume-html .card-skills {
   position: relative;
 }
 
-.space-top {
+div.resume-html .space-top {
     margin-top: 5px;
 }
 
-#container {
+div.resume-html #container {
   max-width: 800px;
   margin: 0 auto;
 }
 
-#elevator-pitch {
+div.resume-html #elevator-pitch {
   text-align: center;
   font-size: 24px;
   color: #BFC1C3;
@@ -262,6 +271,6 @@ a:hover {
   font-weight: normal;
 }
 
-.res-label {
+div.resume-html .res-label {
   font-style: italic;
 }
