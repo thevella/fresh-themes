@@ -154,9 +154,9 @@
                             </li>
                             {{/each}}
                         </ul>
-                        {{#if r.skills.list}}
+                        {{#if r.skills.list-independant}}
                         <ul class="list-unstyled">
-                            {{#each r.skills.list}}
+                            {{#each r.skills.list-independant}}
                             <li class="card card-nested card-skills">
                                 <div class="skill-level" rel="tooltip" title="{{ level }}" data-placement="left">
                                     <div class="skill-progress {{toLower level }}"></div>
