@@ -7,6 +7,7 @@
 
 div.resume-html * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 div.resume-html main {
@@ -105,8 +106,8 @@ div.resume-html h2 {
   color: #4376a2;
   text-transform: uppercase;
   font-weight: normal;
-  padding-top: 10px;
-  margin-bottom: 20px;
+  /*padding-top: 10px;
+  margin-bottom: 20px;*/
 }
 
 div.resume-html h3 {
