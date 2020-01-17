@@ -162,7 +162,11 @@
                                     <div class="skill-progress {{toLower level }}"></div>
                                 </div>
                                 <div class="skill-info">
+                                    {{#if years}}
                                     <strong>{{ name }} ({{ years }} years experience)</strong>
+                                    {{else}}
+                                    <strong>{{ name }}</strong>
+                                    {{/if}}
                                     <div class="space-top labels">
                                         {{#if summary}}
                                         <div class="label label-keyword">
