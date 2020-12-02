@@ -1,15 +1,16 @@
-div.resume-html body, main, section, header, ul, p, h1, h2, h3 {
+div.resume-html body,
+div.resume-html main,
+div.resume-html section,
+div.resume-html header,
+div.resume-html ul,
+div.resume-html p,
+div.resume-html h1,
+div.resume-html h2,
+div.resume-html h3 {
   font-family: {{{fontList 'default'}}};
   font-size: 12px;
   margin: 0; padding: 0;
   display: block;
-}
-
-div.resume-html {
-    font-family: {{{fontList 'default'}}};
-    font-size: 12px;
-    margin: 0; padding: 0;
-    display: block; 
 }
 
 div.resume-html a {
