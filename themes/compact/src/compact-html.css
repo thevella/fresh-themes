@@ -1,64 +1,64 @@
-html, body, main, section, header, ul, p, h1, h2, h3 {
+div.resume-html html, body, main, section, header, ul, p, h1, h2, h3 {
   font-family: {{{fontList 'default'}}};
   font-size: 12px;
   margin: 0; padding: 0;
   display: block;
 }
 
-a {
+div.resume-html a {
   color: #0064BD;
   text-decoration: none;
 }
 
-a:visited {
+div.resume-html a:visited {
   color: #7B0796;
 }
 
-a:hover {
+div.resume-html a:hover {
   text-decoration: underline;
 }
 
-h2 {
+div.resume-html h2 {
   text-transform: uppercase;
 }
 
-h3 {
+div.resume-html h3 {
   font-size: 1em;
 }
 
-hr {
+div.resume-html hr {
   border: none;
   border-top: 1px solid #B3B3B3;
 }
 
-main {
+div.resume-html main {
   padding: 15px;
   max-width: 700px;
   margin: 0 auto;
 }
 
-section {
+div.resume-html section {
   margin-top: 1em;
 }
 
-li {
+div.resume-html li {
   margin-left: 2em;
 }
 
-p, li {
+div.resume-html p, li {
   text-align: justify;
   clear: both;
 }
 
-.tenure {
+div.resume-html .tenure {
   float: right;
 }
 
-thead {
+div.resume-html thead {
   display: none;
 }
 
-main > header {
+div.resume-html main > header {
   width: 100%;
   float: left;
   margin-bottom: 0;
@@ -66,34 +66,34 @@ main > header {
 }
 
 
-h3 {
+div.resume-html h3 {
   display: inline-block;
   line-height: 1;
 }
-#contact {
+div.resume-html #contact {
   float: right;
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
-#contact > div {
+div.resume-html #contact > div {
   display: inline-block;
   margin-left: 5px;
 }
 
-span.fa {
+div.resume-html span.fa {
   text-align: left;
   margin-right: 3px;
   float: left;
 }
 
-section > div {
+div.resume-html section > div {
   margin-bottom: 1em;
   clear: both;
 }
 
-span.keywords {
+div.resume-html span.keywords {
   font-size: 10px;
   color: gray;
   text-align: right;
