@@ -42,6 +42,7 @@
 {{#*inline "icon-references"}}<span class="fa fa-thumbs-o-up"></span>{{/inline}}
 {{#*inline "icon-interests"}}<span class="fa fa-bicycle"></span>{{/inline}}
 
+
 {{#*inline "body-employment" }}
 <div>
   <h3><em>{{ position }}</em>,
@@ -55,7 +56,7 @@
   <p>{{{ summary }}}</p>
   {{> highlights }}
   {{#if keywords}}
-  <span class="keywords">{{#each keywords}}{{{ . }}} {{/each}}</span>
+  <span class="keywords">{{#each keywords}}{{{ . }}}{{#if @last }}{{else}} | {{/if}}{{/each}}</span>
   {{/if}}
 </div>
 {{/inline}}
@@ -73,7 +74,7 @@
   <p>{{{ summary }}}</p>
   {{> highlights }}
   {{#if keywords}}
-  <span class="keywords">{{#each keywords}}{{{ . }}} {{/each}}</span>
+  <span class="keywords">{{#each keywords}}{{{ . }}}{{#if @last }}{{else}} | {{/if}}{{/each}}</span>
   {{/if}}
 </div>
 {{/inline}}
@@ -96,7 +97,7 @@
       {{#each r.skills.sets}}
       <tr>
         <td style="width: 25%;">{{ name }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="keywords">{{#each skills}}{{ . }}{{#if @last }}{{else}}  |  {{/if}}{{/each}}</td>
+        <td class="keywords">{{#each skills}}{{ . }}{{#if @last }}{{else}} | {{/if}}{{/each}}</td>
       </tr>
       {{/each}}
     </tbody>
@@ -112,10 +113,10 @@
 
 {{#*inline "header-info"}}{{/inline}}
 {{> section/info }}
+{{> section/education _icon="icon-education"}}
 {{> section/employment _icon="icon-employment"}}
 {{> section/projects _icon="icon-projects"}}
 {{> section/governance _icon="icon-governance"}}
-{{> section/education _icon="icon-education"}}
 {{> section/service _icon="icon-service"}}
 {{> section/extracurricular _icon="icon-extracurricular"}}
 {{> section/affiliation _icon="icon-affiliation"}}

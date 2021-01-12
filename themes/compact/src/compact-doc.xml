@@ -61,11 +61,11 @@
       </w:p>
       {{{wpml RAW.info.brief }}}
       {{#section "skills"}}{{> skills }}{{/section}}
+      {{#section "education"}}{{> section/education }}{{/section}}
       {{#section "employment"}}{{> section/employment }}{{/section}}
       {{#section "projects"}}{{> section/projects }}{{/section}}
       {{#section "governance"}}{{> section/governance }}{{/section}}
       {{#section "affiliation"}}{{> section/affiliation }}{{/section}}
-      {{#section "education"}}{{> section/education }}{{/section}}
       {{#section "service"}}{{> section/service }}{{/section}}
       {{#section "extracurricular"}}{{> section/extracurricular }}{{/section}}
       {{#section "writing"}}{{> section/writing }}{{/section}}
